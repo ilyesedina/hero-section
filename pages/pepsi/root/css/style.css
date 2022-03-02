@@ -30,6 +30,10 @@ header{
 header .logo{
     position: relative;
     max-width: 80px;
+    transition: 0.4s;
+}
+header .logo:hover{
+    transform: rotate(360deg);
 }
 header ul{
     position: relative;
