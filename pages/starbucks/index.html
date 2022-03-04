@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Landing Page Website</title>
+    <link rel="stylesheet" href="root/css/style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="root/img/logo.png"></a>
+            <ul>
+                <li><a href="../../index.html">Pepsi</a></li>
+                <li><a href="#">Starbucks</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Content</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It is not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p class="web">Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Ullam sed unde et asperiores eligendi repellendus 
+                    voluptatem numquam facilis, qui minima blanditiis fugit 
+                    exercitationem dolorem dolorum quaerat inventore eum 
+                    laborum consequatur!</p>
+                <p class="mobile">Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Ullam sed unde et asperiores eligendi repellendus 
+                    voluptatem numquam facilis.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imageBox">
+                <img class="starbucks" src="root/img/img1.png">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="root/img/img1.png" onclick="imgSlider('root/img/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="root/img/img2.png" onclick="imgSlider('root/img/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="root/img/img4.png" onclick="imgSlider('root/img/img4.png');changeCircleColor('#5C4033')" class="picture3"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="root/img/facebook.png"></a></li>
+            <li><a href="#"><img src="root/img/twitter.png"></a></li>
+            <li><a href="#"><img src="root/img/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
