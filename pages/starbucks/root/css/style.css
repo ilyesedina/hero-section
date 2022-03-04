@@ -33,10 +33,10 @@ header ul{
     position: relative;
     display: flex;
 }
-header ul.active{
+/* header ul.active{
     visibility: visible;
     opacity: 1;
-}
+} */
 header ul li{
     list-style: none;
 }
@@ -160,8 +160,56 @@ header ul li a{
     header .logo {
         max-width: 60px;
     }
+    
+    .toggleMenu{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(../img/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 2;
+        filter: invert(1);
+    }
+    .toggleMenu.active{
+        background: url(../img/close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+    }
     header ul{
-        display: none;
+        position: fixed;
+        top: 0; 
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+        visibility: hidden;
+        opacity: 0;
+    }
+    header ul.active{
+        visibility: visible;
+        opacity: 1;
+    }
+    header ul li a{
+        display: inline-block;
+        color: #111;
+        font-weight: 400;
+        margin-left: 0;
+        text-decoration: none;
+        font-size: 2em;
+        margin: 10px 0;
+    }
+    header ul li a:hover{
+        color: #017143;
     }
     section{
         padding: 20px 20px 120px;
@@ -189,5 +237,12 @@ header ul li a{
     }
     .circle {
         clip-path: circle(400px at center bottom);
+    }
+    .sci{
+        background-color: #017143;
+        right: 0;
+        width: 50px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
     }
 }
