@@ -237,7 +237,7 @@ section header .toggle{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .textBlocks{
         position: absolute;
         bottom: 0;
@@ -267,5 +267,14 @@ section header .toggle{
         bottom: 0;
         right: -280px;
         max-height: 90%;
+    }
+}
+@media (max-width: 400px) {
+    .bird {
+        right: -270px;
+        max-height: 95%;
+    }
+    .content h2{
+        font-size: 1.5rem;
     }
 }
