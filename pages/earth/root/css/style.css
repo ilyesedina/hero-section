@@ -167,7 +167,7 @@ section header .toggle{
     }
     .content{
         position: relative;
-        left: unset;
+        left: unset !important;
     }
     .toggleMenu{
         position: relative;
@@ -241,6 +241,10 @@ section header .toggle{
         color: #fff;
         margin-top: -5px;
     }
+    .bird {
+        right: -170px !important;
+        max-height: 90%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -252,7 +256,7 @@ section header .toggle{
     }
     .content{
         position: relative;
-        left: unset;
+        left: unset !important;
     }
     .textBlocks .block {
         position: relative;
@@ -275,13 +279,13 @@ section header .toggle{
     .bird {
         position: absolute;
         bottom: 0;
-        right: -280px;
+        right: -280px !important;
         max-height: 90%;
     }
 }
 @media (max-width: 400px) {
     .bird {
-        right: -230px;
+        right: -230px !important;
         max-height: 95%;
     }
     .content h2{
