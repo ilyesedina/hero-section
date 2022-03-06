@@ -79,7 +79,8 @@ section header .toggle{
     max-height: 80%;
 }
 .content{
-    position: relative;
+    position: absolute;
+    left: 100px;
     max-width: 600px;
     /* z-index: 10; */
 }
@@ -163,6 +164,10 @@ section header .toggle{
     .web{
         display: none;
     }
+    .content{
+        position: relative;
+        left: unset;
+    }
     .toggleMenu{
         position: relative;
         width: 30px;
@@ -243,6 +248,10 @@ section header .toggle{
         bottom: 0;
         display: -webkit-box;
         margin-top: 100px;
+    }
+    .content{
+        position: relative;
+        left: unset;
     }
     .textBlocks .block {
         position: relative;
