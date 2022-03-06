@@ -81,7 +81,7 @@ section header .toggle{
 .content{
     position: absolute;
     left: 100px;
-    max-width: 600px;
+    max-width: 500px;
     /* z-index: 10; */
 }
 .mobile{
