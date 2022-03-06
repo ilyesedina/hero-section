@@ -245,6 +245,10 @@ section header .toggle{
         right: -170px !important;
         max-height: 90%;
     }
+    .bg{
+        width: 100% !important;
+        height: 100% !important;
+    }
 }
 
 @media (max-width: 600px) {
@@ -282,6 +286,10 @@ section header .toggle{
         right: -280px !important;
         max-height: 90%;
     }
+    .bg{
+        width: 100% !important;
+        height: 100% !important;
+    }
 }
 @media (max-width: 400px) {
     .bird {
@@ -295,5 +303,9 @@ section header .toggle{
         padding: 10px;
         margin-bottom: 15px;
         margin-right: 20px;
+    }
+    .bg{
+        width: 100% !important;
+        height: 100% !important;
     }
 }
