@@ -156,6 +156,7 @@ header ul li a{
     }
     header{
         padding: 20px;
+        padding-right: 40px;
     }
     header .logo {
         max-width: 60px;
