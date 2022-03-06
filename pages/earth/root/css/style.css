@@ -271,10 +271,15 @@ section header .toggle{
 }
 @media (max-width: 400px) {
     .bird {
-        right: -270px;
+        right: -230px;
         max-height: 95%;
     }
     .content h2{
         font-size: 1.5rem;
+    }
+    .textBlocks .block {
+        padding: 10px;
+        margin-bottom: 15px;
+        margin-right: 20px;
     }
 }
