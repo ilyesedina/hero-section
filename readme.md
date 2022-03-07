@@ -5,4 +5,4 @@
 Page hero section for Pepsi created with HTML, CSS and JS. Focusing on frontend and interaction. 
 
 ## Pepsi Starbucks Earth
-![](pages/pages2.pdf)
+![](pages/pages.png)
